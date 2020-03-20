@@ -2,6 +2,7 @@
     "name": "bungnewbie/corona",
     "description": "Get corona data from https://api.kawalcorona.com/",
     "license": "MIT",
+    "minimum-stability": "dev",
     "keywords": [
         "corona",
         "covid-19",
@@ -16,21 +17,26 @@
             "email": "lamaaurizkhal@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "autuoload": {
         "psr-4": {
             "Bungnewbie\\Corona\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-                "providers": [
-                    "Bungnewbie\\Corona\\Providers\\CoronaServiceProvider"
-                ]
-            }
-    },
     "require": {
         "php": "^7.0",
         "guzzlehttp/guzzle": "^6.3",
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bungnewbie\\Corona\\Providers\\CoronaServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
     }
 }
