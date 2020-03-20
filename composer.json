@@ -1,6 +1,6 @@
 {
     "name": "bungnewbie/corona",
-    "description": "GET CORONA DATA",
+    "description": "Get corona data from https://api.kawalcorona.com/",
     "license": "MIT",
     "keywords": [
         "corona",
@@ -26,7 +26,7 @@
     "extra": {
     "laravel": {
             "providers": [
-                "Bungnewbie\\Providers\\CoronaServiceProvider"
+                "Bungnewbie\\Corona\\Providers\\CoronaServiceProvider"
             ]
         }
     },
