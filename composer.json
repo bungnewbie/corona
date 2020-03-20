@@ -1,0 +1,20 @@
+{
+    "name": "bungnewbie/corona",
+    "description": "GET CORONA DATA",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rizkhal Lamaau @bungnewbie",
+            "email": "lamaaurizkhal@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autuoload": {
+        "psr-4": {
+            "Bungnewbie\\Corona\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0@dev"
+    }
+}
