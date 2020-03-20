@@ -17,18 +17,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": true,
     "autuoload": {
         "psr-4": {
             "Bungnewbie\\Corona\\": "src/"
         }
     },
     "extra": {
-    "laravel": {
-            "providers": [
-                "Bungnewbie\\Corona\\Providers\\CoronaServiceProvider"
-            ]
-        }
+        "laravel": {
+                "providers": [
+                    "Bungnewbie\\Corona\\Providers\\CoronaServiceProvider"
+                ]
+            }
     },
     "require": {
         "php": "^7.0",
