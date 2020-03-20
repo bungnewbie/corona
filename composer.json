@@ -2,6 +2,14 @@
     "name": "bungnewbie/corona",
     "description": "GET CORONA DATA",
     "license": "MIT",
+    "keywords": [
+        "corona",
+        "covid-19",
+        "kawalcorona",
+        "api corona",
+        "laravel corona",
+        "covid corona",
+    ],
     "authors": [
         {
             "name": "Rizkhal Lamaau @bungnewbie",
@@ -9,12 +17,21 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "autuoload": {
         "psr-4": {
             "Bungnewbie\\Corona\\": "src/"
         }
     },
+    "extra": {
+    "laravel": {
+            "providers": [
+                "Bungnewbie\\Providers\\CoronaServiceProvider"
+            ]
+        }
+    }
     "require": {
-        "guzzlehttp/guzzle": "^6.3"
+        "php": "^7.0",
+        "guzzlehttp/guzzle": "^6.3",
     }
 }
