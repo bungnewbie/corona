@@ -15,7 +15,7 @@ class CoronaServiceProvider extends ServiceProvider
     {
         $this->app->bind(
             \Bungnewbie\Corona\Repositories\CoronaServiceRepository::class,
-            \Bungnewbie\Corona\Services\CoronaService::class,
+            \Bungnewbie\Corona\Services\CoronaService::class
         );
     }
 
