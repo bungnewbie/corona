@@ -2,7 +2,6 @@
     "name": "bungnewbie/corona",
     "description": "Get corona data from https://api.kawalcorona.com/",
     "license": "MIT",
-    "type": "package",
     "minimum-stability": "dev",
     "keywords": [
         "corona",
