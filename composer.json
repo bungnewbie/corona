@@ -5,11 +5,10 @@
     "minimum-stability": "dev",
     "keywords": [
         "corona",
-        "covid-19",
+        "covid19",
         "kawalcorona",
-        "api corona",
-        "laravel corona",
-        "covid corona"
+        "apicorona",
+        "laravel"
     ],
     "authors": [
         {
