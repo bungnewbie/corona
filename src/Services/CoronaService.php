@@ -31,7 +31,8 @@ class CoronaService implements CoronaServiceRepository
 			$resultsAsCountry[++$key] = $country;
 		}
 		foreach ($resultsAsCountry as $key => $country) {
-			if($country['attributes']['Country_Region']===Helper::filter_param($region)) {
+			if($country['attributes']['Country_Region']
+				=== Helper::filter_param($region)) {
 				$results[] = $country;
 			}
 		}
