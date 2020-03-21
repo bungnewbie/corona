@@ -27,9 +27,9 @@ class CoronaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(
-            \Bungnewbie\Corona\Repositories\CoronaServiceRepository::class,
-            \Bungnewbie\Corona\Services\CoronaService::class
-        );
+        // $this->app->bind(
+        //     \Bungnewbie\Corona\Repositories\CoronaServiceRepository::class,
+        //     \Bungnewbie\Corona\Services\CoronaService::class
+        // );
     }
 }
