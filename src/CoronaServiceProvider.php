@@ -15,7 +15,7 @@ class CoronaServiceProvider extends ServiceProvider
     {
         if (function_exists('config_path')) {
             $this->publishes([
-                __DIR__.'/../config/covid.php' => config_path('covid.php'),
+                __DIR__.'../config/covid.php' => config_path('covid.php'),
             ]);
         }
     }
