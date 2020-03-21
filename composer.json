@@ -27,6 +27,11 @@
         "guzzlehttp/guzzle": "^6.3"
     },
     "extra": {
+        "laravel": {
+            "providers": [
+                "Bungnewbie\\Corona\\CoronaServiceProvider"
+            ]
+        },
         "branch-alias": {
             "dev-master": "v1.0.0-dev"
         }
