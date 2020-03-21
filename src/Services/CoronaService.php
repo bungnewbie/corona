@@ -8,22 +8,23 @@ use Bungnewbie\Corona\Repositories\CoronaServiceRepository;
 
 class CoronaService implements CoronaServiceRepository
 {
-	protected $client;
+	protected $client, $urlApi;
 
 	public function __construct(Client $client)
 	{
 		$this->client = $client;
+		$this->urlApi = config('covid.api_url');
 	}
 
 	public function allCountry()
 	{
-		return $this->client->request('GET', config('bungnewbie.api_url'));
+		return $this->client->request('GET', $this->urlApi);
 	}
 
 	public function whereCountry($region)
 	{
 		$countries = $this->client
-						  ->request('GET', config('bungnewbie.api_url'))
+						  ->request('GET', $this->urlApi)
 						  ->getBody()->getContents();
 
 		$countries = (array)json_decode($countries, true);
@@ -41,16 +42,16 @@ class CoronaService implements CoronaServiceRepository
 
 	public function totalConfirmed()
     {
-    	return $this->client->request('GET', config('bungnewbie.api_url').'positif');
+    	return $this->client->request('GET', $this->urlApi.'positif');
     }
 
     public function totalRecovered()
     {
-    	return $this->client->request('GET', config('bungnewbie.api_url').'sembuh');
+    	return $this->client->request('GET', $this->urlApi.'sembuh');
     }
 
     public function totalDeaths()
     {
-    	return $this->client->request('GET', config('bungnewbie.api_url').'meninggal');
+    	return $this->client->request('GET', $this->urlApi.'meninggal');
     }
 }
