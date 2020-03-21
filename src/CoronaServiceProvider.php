@@ -1,6 +1,6 @@
 <?php
 
-namespace Bungnewbie\Corona\Providers;
+namespace Bungnewbie\Corona;
 
 use Illuminate\Support\ServiceProvider;
 

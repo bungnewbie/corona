@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bungnewbie\\Corona\\Providers\\CoronaServiceProvider"
+                "Bungnewbie\\Corona\\CoronaServiceProvider"
             ]
         },
         "branch-alias": {
