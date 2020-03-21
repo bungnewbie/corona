@@ -1,3 +1,4 @@
-/node_modules
 /vendor
 /.phpintel
+/node_modules
+/composer.lock
